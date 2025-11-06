@@ -27,13 +27,13 @@ const SearchPage = () => {
 
     return (
         <>
-            <h1>Поиск</h1>
+            <h1>Search</h1>
             <form onSubmit={handleSubmit}>
                 <input
                     value={movieName}
                     onChange={(e) => setMovieName(e.target.value)}
                     type="text" />
-                <button>Поиск</button>
+                <button>Search</button>
             </form>
             {error ? 
             (<div>{error}</div>) : 
